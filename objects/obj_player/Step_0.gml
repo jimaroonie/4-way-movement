@@ -21,15 +21,19 @@ y_speed = y_speed * move_speed;
 //animate sprite
 if x_speed != 0 || y_speed != 0 {
 	sprite_index = spr_run;
-} else  {
+} else {
 	sprite_index = spr_idle;
 }
 
 if x_speed < 0 {
-	image_xscale = -1;
+	//image_xscale = -1;
+	scale_target = -1;
 } else if x_speed > 0 {
-	image_xscale = 1;
+	//image_xscale = 1;
+	scale_target = 1;
 }
+
+x_scale = approach(x_scale, scale_target, 0.4);
 
 //update position
 //x += x_speed;
