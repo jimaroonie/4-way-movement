@@ -32,5 +32,11 @@ if x_speed < 0 {
 }
 
 //update position
-x += x_speed;
-y += y_speed;
+//x += x_speed;
+//y += y_speed;
+
+//move and collide
+move_and_collide(x_speed, y_speed, all);
+
+//change depth
+depth = -y;
