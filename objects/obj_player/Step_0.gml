@@ -40,7 +40,7 @@ x_scale = approach(x_scale, scale_target, 0.4);
 //y += y_speed;
 
 //move and collide
-move_and_collide(x_speed, y_speed, all);
+move_and_collide(x_speed, y_speed, obj_collision_parent);
 
 //change depth
 depth = -y;
