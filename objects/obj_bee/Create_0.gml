@@ -2,9 +2,11 @@
 
 bee_idle_speed = 2;
 bee_attack_speed = 6;
-trigger_distance = 200;
+trigger_distance = 120;
 counter = 0;
 alert_timer = 60;
+attack_timer = 5 * 60;
+ignore_timer = 2 * 60;
 state = "IDLE";
 
 //random image index

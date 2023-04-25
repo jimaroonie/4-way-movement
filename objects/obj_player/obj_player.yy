@@ -39,8 +39,8 @@
     "path": "sprites/spr_idle/spr_idle.yy",
   },
   "spriteMaskId": {
-    "name": "spr_shadow",
-    "path": "sprites/spr_shadow/spr_shadow.yy",
+    "name": "spr_mask",
+    "path": "sprites/spr_mask/spr_mask.yy",
   },
   "visible": true,
 }

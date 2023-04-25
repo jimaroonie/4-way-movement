@@ -42,6 +42,20 @@ switch (state) {
 		var diff = angle_difference(dir, direction);
 		direction += diff * 0.1;
 		direction += random(10) - 5;
+		counter ++;
+		if counter >= attack_timer {
+			counter = 0;
+			speed = 0;
+			reset_idle_path();
+			state = "IGNORE";
+		}
+		break;
+		
+	case "IGNORE" :
+		if ++counter >= ignore_timer {
+			counter = 0;
+			state = "IDLE";
+		}
 		break;
 }
 

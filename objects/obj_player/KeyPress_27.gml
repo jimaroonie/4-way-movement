@@ -1,3 +1,5 @@
 /// @description end game
 
-game_end();
+if os_browser == -1 {
+	game_end();
+}

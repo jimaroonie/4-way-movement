@@ -1,4 +1,4 @@
-/// @description debug rooms
+/// @description rooms
 
 var back = keyboard_check_pressed(ord("B"));
 var next = keyboard_check_pressed(ord("N"));
@@ -17,4 +17,10 @@ if back {
 	} else {
 		room_goto(room_last);
 	}
+}
+
+if x < 0 && room == rm_bees {
+	room_goto(rm_trees);
+} else if x > room_width && room == rm_trees {
+	room_goto(rm_bees);
 }
