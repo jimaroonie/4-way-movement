@@ -24,3 +24,10 @@ if x < 0 && room == rm_bees {
 } else if x > room_width && room == rm_trees {
 	room_goto(rm_bees);
 }
+
+//browser fullscreen
+if os_browser != browser_not_a_browser {
+	if display_get_width() != window_get_width() {
+		window_set_size(display_get_width(), display_get_height());
+	}
+}

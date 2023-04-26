@@ -1,5 +1,5 @@
 /// @description end game
 
-if os_browser == -1 {
+if os_browser == browser_not_a_browser {
 	game_end();
 }
